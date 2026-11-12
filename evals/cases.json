@@ -1,0 +1,52 @@
+[
+  {
+    "id": "en_tradeoff",
+    "request": "Polish this report paragraph with the skill. Return final prose in English.",
+    "source": "It is important to stress that weighting is not universally superior. On a reused diagnostic set, high-region RMSE was $780 for WLS and $1,000 for OLS. Overall RMSE was $1,260 for WLS and $1,180 for OLS. We should not claim that all predictions improve."
+  },
+  {
+    "id": "zh_interval",
+    "request": "请润色下面的结果讨论，突出发现，精简自辩，保留必要统计说明。仅给中文终稿。",
+    "source": "为避免误解，必须指出我们并不声称取得了普遍优势。复用诊断集上的 F1 差值（A 减 B）为 0.026，2,000 次配对 bootstrap 的 95% 区间为 [-0.010, 0.061]。重采样固定拟合模型和类别样本数，未计入重新训练及选参变化。模型参数由训练 OOF 选择，同一组标签也用于计算被选择设置的 OOF 得分，因此存在选择乐观偏差。应谨慎解释。"
+  },
+  {
+    "id": "en_probability",
+    "request": "Edit this academic notebook discussion for clarity, keeping the evidence precise.",
+    "source": "This is not just about F1; the real story is probability quality. Training OOF Brier scores were 0.052 for the baseline and 0.087 for weighting. Threshold tuning kept the probabilities unchanged. No calibration correction was fitted."
+  },
+  {
+    "id": "zh_causality",
+    "request": "润色这两句，保持原意和正式语气。",
+    "source": "差异可能与样本量有关；本研究未操纵样本量。两个模型的阈值均为 0.5，只有类别权重不同。"
+  },
+  {
+    "id": "en_reviewer",
+    "request": "Write a concise response to this reviewer using only the supplied evidence. Reviewer: The thresholds differed, so the weighting comparison is confounded.",
+    "source": "Both models used threshold 0.5. Only class weights differed."
+  },
+  {
+    "id": "zh_null",
+    "request": "精简这段结果说明。",
+    "source": "必须承认，检验未检测到处理组与对照组的明确差异（p = 0.41）。这并不能证明两者等效。"
+  },
+  {
+    "id": "en_grid",
+    "request": "Polish this sensitivity-analysis paragraph without changing its meaning.",
+    "source": "We do not claim ratio 4 is best everywhere. Within the tested grid, ratio 4 had equal-region OOF MAE of $900, and ratio 6 had $904. Every cutoff was evaluated on the same 120 high-price OOF cases. The cutoff sweep compared training priorities and did not establish a universal optimum."
+  },
+  {
+    "id": "en_protected",
+    "request": "Polish this notebook Markdown text. Preserve technical spans and facts.",
+    "source": "It is important to note that `predict_proba(X)[:, 1]` supplies the scores. We used $t=0.5$ and observed recall 0.82. See [methods](methods.md#thresholds).\n\n```python\nthreshold = 0.5\n```"
+  },
+  {
+    "id": "zh_voice",
+    "request": "请保留作者的个人语气，仅修改确有必要之处。",
+    "source": "这个结果让我有些犹豫：平均误差下降了，但最难的那组样本没有改善。"
+  },
+  {
+    "id": "en_missing",
+    "request": "Draft two report sentences about the main result using only the information supplied.",
+    "source": "The experiment compares weighted and unweighted regression on a validation set. The metric is MAE. Numerical results have not been supplied."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "en_tradeoff",
+    "output": "On the reused diagnostic set, WLS had lower high-region RMSE than OLS ($780 versus $1,000) but higher overall RMSE ($1,260 versus $1,180)."
+  },
+  {
+    "id": "zh_interval",
+    "output": "在复用诊断集上，F1 差值（A 减 B）为 0.026，2,000 次配对 bootstrap 的 95% 区间为 [-0.010, 0.061]，尚不能据此确认 A 的 F1 更高。重采样固定拟合模型和类别样本数，未计入重新训练及选参变化。模型参数由训练 OOF 选择，同一组标签又用于计算所选设置的 OOF 得分，存在选择乐观偏差。"
+  },
+  {
+    "id": "en_probability",
+    "output": "Training OOF Brier scores were lower for the baseline (0.052) than for weighting (0.087). Threshold tuning left the probabilities unchanged, and no calibration correction was fitted."
+  },
+  {
+    "id": "zh_causality",
+    "output": "差异可能与样本量有关，但本研究未操纵样本量。两个模型均采用 0.5 的阈值，仅类别权重不同。"
+  },
+  {
+    "id": "en_reviewer",
+    "output": "Both models used a threshold of 0.5; only the class weights differed."
+  },
+  {
+    "id": "zh_null",
+    "output": "检验未检测到处理组与对照组的明确差异（p = 0.41），但不能据此认定两者等效。"
+  },
+  {
+    "id": "en_grid",
+    "output": "Within the tested grid, ratio 4 had an equal-region OOF MAE of $900, compared with $904 for ratio 6. The cutoff sweep compared training priorities, with every cutoff evaluated on the same 120 high-price OOF cases; it did not establish a universal optimum."
+  },
+  {
+    "id": "en_protected",
+    "output": "The scores came from `predict_proba(X)[:, 1]`. We used $t=0.5$ and observed recall 0.82. See [methods](methods.md#thresholds).\n\n```python\nthreshold = 0.5\n```"
+  },
+  {
+    "id": "zh_voice",
+    "output": "这个结果让我有些犹豫：平均误差下降了，但最难的那组样本没有改善。"
+  },
+  {
+    "id": "en_missing",
+    "output": "Weighted and unweighted regression were compared on the validation set using MAE. The weighted model had an MAE of [weighted validation MAE], compared with [unweighted validation MAE] for the unweighted model."
+  }
+]

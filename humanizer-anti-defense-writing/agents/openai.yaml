@@ -1,0 +1,4 @@
+interface:
+  display_name: "Humanizer-Anti-Defense Writing"
+  short_description: "Natural academic prose with precise statistical context"
+  default_prompt: "Use $humanizer-anti-defense-writing to polish this report or notebook prose, foreground supported findings, and preserve essential statistical qualifications and technical content."
